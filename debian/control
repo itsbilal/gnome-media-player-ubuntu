@@ -1,0 +1,42 @@
+Source: gnome-media-player
+Section: video
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Bilal Akhtar <bilalakhtar96@yahoo.com>
+Build-Depends: debhelper (>= 7.0.50~),
+               intltool (>= 0.35),
+               libdbus-1-dev,
+               libdbus-glib-1-dev,
+               libgstreamer0.10-dev,
+               libgstreamer-plugins-base0.10-dev,
+               libgconf2-dev,
+               libgtkmm-2.4-dev,
+               libsigc++-2.0-dev,
+               libunique-dev,
+               libvlc-dev,
+               libxine-dev,
+               pkg-config
+Standards-Version: 3.9.1
+Homepage: https://launchpad.net/gnome-media-player
+
+Package: gnome-media-player
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: libxine1-ffmpeg
+Suggests: vlc
+Description: A simple media player for GNOME
+ This media player supports the vlc, xine and GStreamer engines for playing
+ media. Since some file formats play well only on a certain engine,
+ this media player was made with 3 engines, so that the user can
+ select the required engine required for playing a particular file type.
+ It also has an engine auto select mode, in which the player automatically
+ selects the best engine for the particular type of file being played.
+ .
+ GNOME Media Player:
+  * has a GNOME/GTK interface
+  * does double-click fullscreen
+  * can use the mouse scroll wheel
+  * uses libvlc, xine-lib or libgstreamer
+  * a playlist that loops
+  * middle mouse button pause
+  * can deinterlace (not available on the libgstreamer engine)

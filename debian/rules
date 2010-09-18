@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	dh_auto_install
+	rm debian/gnome-media-player/usr/share/doc/gnome-media-player/COPYING
+	rm debian/gnome-media-player/usr/share/doc/gnome-media-player/INSTALL
+	mkdir -p debian/gnome-media-player/usr/share/apport/package-hooks/
+	cp debian/apport_hook.py debian/gnome-media-player/usr/share/apport/package-hooks/gnome-media-player.py

@@ -1,0 +1,42 @@
+This package was debianized by:
+
+    Bilal Akhtar <bilalakhtar96@yahoo.com> on Sun, 02 May 2010 17:27:04 +0300
+
+It was downloaded from:
+
+    https://launchpad.net/gnome-media-player
+
+Upstream Author(s):
+
+    Michael Lamothe <michael.lamothe@gmail.com>
+    Bilal Akhtar <bilalakhtar96@yahoo.com>
+
+Copyright:
+
+    Copyright (C) 2010 Michael Lamothe <michael.lamothe@gmail.com>
+
+License:
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This package is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+On Debian systems, the complete text of the GNU General
+Public License version 3 can be found in `/usr/share/common-licenses/GPL-3'.
+
+The Debian packaging is:
+
+    Copyright (C) 2010 Bilal Akhtar <bilalakhtar96@yahoo.com>
+
+and is licensed under the GPL version 3 or later, see above.
+
+
