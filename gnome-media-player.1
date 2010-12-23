@@ -1,0 +1,46 @@
+.TH GNOME\-MEDIA\-PLAYER 1 "MARCH 2010" GNOME
+.SH NAME
+gnome\-media\-player \- A simple media player for GNOME that supports VLC, Xine and GStreamer based engines.
+.SH SYNOPSIS
+.B gnome-media-player [--help] [--engine-type=
+.I engine
+.B ] [
+.I files
+.B ] ...
+.SH DESCRIPTION
+.B gnome-media-player
+is a simple media player for GNOME that supports using the VLC, Xine and GStreamer engines for playing audio and video files
+.SH OPTIONS
+.TP
+.I files
+Plays the files specified in
+.I files
+when the player starts.
+.TP
+.B \--help
+Shows the available options
+.TP
+.B \-e <engine> , --engine-type=<engine>
+Forces GNOME Media Player to use
+.I <engine>
+as its engine type. Valid options are
+.B auto, vlc, gstreamer
+and
+.B xine.
+The default option is
+.B auto.
+The 
+.B auto
+option will select an engine and enable/disable the deinterlacer based on the file being played.
+.TP
+.B \--hide-volume-controls
+Hides the volume control from the user interface.
+.TP
+.B \--on-top
+Forces the window of the media player to always remain on top of other windows.
+.TP
+.B \-d, --deinterlace
+Tells GNOME Media Player to deinterlace.
+.SH AUTHOR
+Bilal Akhtar <bilalakhtar96@yahoo.com>, Michael Lamothe <michael.lamothe@gmail.com>
+

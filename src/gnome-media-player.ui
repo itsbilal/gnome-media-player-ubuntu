@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="main_window">
+    <property name="visible">True</property>
+    <property name="title" translatable="yes">GNOME Media Player</property>
+    <property name="default_width">500</property>
+    <property name="default_height">400</property>
+    <property name="icon_name">applications-multimedia</property>
+    <child>
+      <object class="GtkVBox" id="vbox_main_window">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkHBox" id="hbox_menu">
+            <property name="visible">True</property>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHPaned" id="hpaned_main">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <child>
+              <object class="GtkEventBox" id="event_box_video">
+                <property name="visible">True</property>
+                <property name="events">GDK_POINTER_MOTION_MASK | GDK_STRUCTURE_MASK | GDK_SCROLL_MASK</property>
+                <property name="above_child">True</property>
+                <child>
+                  <object class="GtkDrawingArea" id="drawing_area_video">
+                    <property name="width_request">300</property>
+                    <property name="visible">True</property>
+                    <property name="events">GDK_EXPOSURE_MASK | GDK_POINTER_MOTION_MASK | GDK_STRUCTURE_MASK</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vbox_playlist">
+                <property name="width_request">180</property>
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkScrolledWindow" id="scrolled_window_playlist">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="hscrollbar_policy">automatic</property>
+                    <property name="vscrollbar_policy">automatic</property>
+                    <child>
+                      <object class="GtkTreeView" id="tree_view_playlist">
+                        <property name="visible">True</property>
+                        <property name="can_focus">True</property>
+                        <property name="headers_clickable">False</property>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkHBox" id="hbox_playlist_buttons">
+                    <property name="visible">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">False</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">False</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHBox" id="hbox_controls">
+            <property name="visible">True</property>
+            <property name="spacing">10</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAboutDialog" id="dialog_about">
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">About GNOME Media Player</property>
+    <property name="modal">True</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="icon_name">applications-multimedia</property>
+    <property name="type_hint">normal</property>
+    <property name="transient_for">main_window</property>
+    <property name="has_separator">False</property>
+    <property name="program_name">GNOME Media Player</property>
+    <property name="version">0.1.1</property>
+    <property name="copyright" translatable="yes">Copyright (C) Michael Lamothe 2010</property>
+    <property name="comments" translatable="yes">A simple media player for GNOME/GTK.</property>
+    <property name="website">https://launchpad.net/gnome-media-player</property>
+    <property name="website_label" translatable="yes">GNOME Media Player Project</property>
+    <property name="license" translatable="yes">GPL</property>
+    <property name="authors">Michael Lamothe
+Bilal Akhtar</property>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <placeholder/>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkMenu" id="menu_video">
+    <property name="visible">True</property>
+    <child>
+      <object class="GtkCheckMenuItem" id="menu_item_video_fullscreen">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Toggle Fullscreen</property>
+        <property name="use_underline">True</property>
+        <property name="active">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkCheckMenuItem" id="menu_item_video_playlist">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Toggle Playlist</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkCheckMenuItem" id="menu_item_video_controls">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Toggle Controls</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkCheckMenuItem" id="menu_item_deinterlace">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Toggle Deinterlace</property>
+        <property name="use_underline">True</property>
+      </object>
+    </child>
+  </object>
+</interface>

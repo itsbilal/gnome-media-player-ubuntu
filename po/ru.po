@@ -1,0 +1,174 @@
+# Russian translation for gnome-media-player
+# Copyright (c) 2010 Rosetta Contributors and Canonical Ltd 2010
+# This file is distributed under the same license as the gnome-media-player package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2010.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-media-player\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2010-05-21 15:19+0300\n"
+"PO-Revision-Date: 2010-04-27 19:26+0000\n"
+"Last-Translator: Andrey Kulakov <Unknown>\n"
+"Language-Team: Russian <ru@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-05-28 15:28+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: src/exception.cc:28
+msgid "Failed to get error message"
+msgstr ""
+
+#: src/gnome-media-player.cc:187
+msgid "Show GNOME Media Player help options"
+msgstr "Показатьопции помощи GNOME Media Player"
+
+#: src/gnome-media-player.cc:190
+msgid "Set the window to always remain on top of other windows"
+msgstr ""
+
+#: src/gnome-media-player.cc:195
+msgid "Hide the volume controls from the user interface"
+msgstr "Скрыть управление громкостью"
+
+#: src/gnome-media-player.cc:200
+msgid ""
+"Force engine to use \"auto\", \"vlc\", \"xine\" or \"gstreamer\" (default: "
+"auto)"
+msgstr ""
+"Принудительно использовать \"auto\", \"vlc\", \"xine\" или \"gstreamer\" "
+"(default: auto)"
+
+#: src/gnome-media-player.cc:207
+msgid "Enable deinterlace"
+msgstr "Включить деинтерлейсинг"
+
+#: src/gnome-media-player.cc:271
+msgid "Show Controls"
+msgstr "Показать элементы управления"
+
+#: src/gnome-media-player.cc:271
+msgid "Show/hide video controls"
+msgstr "Показать/скрыть элементы управления видео"
+
+#: src/gnome-media-player.cc:273
+msgid "Deinterlace"
+msgstr "Деинтерлейсинг"
+
+#: src/gnome-media-player.cc:273
+msgid "Enable/Disable deinterlacer"
+msgstr "Включить/Выключить деинтерлейсинг"
+
+#: src/gnome-media-player.cc:274
+msgid "Auto Select"
+msgstr "Автовыбор"
+
+#: src/gnome-media-player.cc:275
+msgid "VLC Engine"
+msgstr "Движок VLC"
+
+#: src/gnome-media-player.cc:276
+msgid "Xine Engine"
+msgstr "Движок Xine"
+
+#: src/gnome-media-player.cc:277
+msgid "GStreamer Engine"
+msgstr "Движок GStreamer"
+
+#: src/gnome-media-player.cc:284
+msgid "Playlist"
+msgstr "Плейлист"
+
+#: src/gnome-media-player.cc:284
+msgid "Show/hide playlist"
+msgstr "Показать/скрыть плейлист"
+
+#: src/gnome-media-player.cc:288
+msgid "_Restart Engine"
+msgstr "_Перезапустить движок"
+
+#: src/gnome-media-player.cc:290
+msgid "Show Video"
+msgstr ""
+
+#: src/gnome-media-player.cc:290
+msgid "Show/hide video widget"
+msgstr ""
+
+#: src/gnome-media-player.cc:293
+msgid "_File"
+msgstr "_Файл"
+
+#: src/gnome-media-player.cc:294
+msgid "_View"
+msgstr "_Вид"
+
+#: src/gnome-media-player.cc:295
+msgid "_Engine"
+msgstr "_Движок"
+
+#: src/gnome-media-player.cc:296
+msgid "_Help"
+msgstr ""
+
+#: src/gnome-media-player.cc:373 src/main_window.cc:693
+msgid "Unknown engine type"
+msgstr "Неизвестный тип движка"
+
+#: src/main_window.cc:84
+msgid "Time:"
+msgstr "Время:"
+
+#: src/main_window.cc:140
+msgid " "
+msgstr " "
+
+#: src/main_window.cc:141
+msgid "Description"
+msgstr "Описание"
+
+#: src/vlc_engine.cc:179
+msgid "MRL not specified"
+msgstr ""
+
+#: src/gnome-media-player.ui:7
+msgid "GNOME Media Player"
+msgstr "GNOME Media Player"
+
+#: src/gnome-media-player.ui:133
+msgid "About GNOME Media Player"
+msgstr "О GNOME Media Player"
+
+#: src/gnome-media-player.ui:142
+msgid "Copyright (C) Michael Lamothe 2010"
+msgstr "Copyright (C) Michael Lamothe 2010"
+
+#: src/gnome-media-player.ui:143
+msgid "A simple media player for GNOME/GTK."
+msgstr "Простой проигрыватель для GNOME/GTK."
+
+#: src/gnome-media-player.ui:145
+msgid "GNOME Media Player Project"
+msgstr "Проект GNOME Media Player"
+
+#: src/gnome-media-player.ui:146
+msgid "GPL"
+msgstr "GPL"
+
+#: src/gnome-media-player.ui:175
+msgid "Toggle Fullscreen"
+msgstr "Вкл/Выкл Полноэкранный Режим"
+
+#: src/gnome-media-player.ui:183
+msgid "Toggle Playlist"
+msgstr "Вкл/Выкл плейлист"
+
+#: src/gnome-media-player.ui:190
+msgid "Toggle Controls"
+msgstr "Вкл/Выкл элементы управления"
+
+#: src/gnome-media-player.ui:197
+msgid "Toggle Deinterlace"
+msgstr "Вкл/Выкл деинтерлейсинга"

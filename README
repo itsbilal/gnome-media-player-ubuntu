@@ -1,0 +1,6 @@
+In order to install this program from source, just run
+./autogen.sh
+make
+sudo make install
+
+in the source directory.
