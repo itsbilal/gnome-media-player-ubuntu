@@ -1,2 +1,3 @@
 add-translation-support.patch
 vlc-1.1.0-upgrade.patch
+mouse-event-support.patch
