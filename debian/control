@@ -1,8 +1,7 @@
 Source: gnome-media-player
 Section: video
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Bilal Akhtar <bilalakhtar96@yahoo.com>
+Maintainer: Bilal Akhtar <bilalakhtar@ubuntu.com>
 Build-Depends: debhelper (>= 7.0.50~),
                intltool (>= 0.35),
                libdbus-1-dev,
@@ -18,6 +17,8 @@ Build-Depends: debhelper (>= 7.0.50~),
                pkg-config
 Standards-Version: 3.9.1
 Homepage: https://launchpad.net/gnome-media-player
+Vcs-Git: git://github.com/bilalakhtar/gnome-media-player-ubuntu.git
+Vcs-Browser: https://github.com/bilalakhtar/gnome-media-player-ubuntu
 
 Package: gnome-media-player
 Architecture: any
